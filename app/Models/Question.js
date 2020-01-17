@@ -20,6 +20,7 @@ export default class Question {
             </div>
             <div class="row">
             <button class="btn btn-warning nextButton" onclick="app.questionsController.showAnswer()"><i class="fas fa-angle-double-right"></i></button>
+            <button class="btn btn-danger" onclick="app.questionsController.skipQuestion()">Skip</button>
             </div>
         </div>
         `

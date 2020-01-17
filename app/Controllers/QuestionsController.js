@@ -41,4 +41,8 @@ export default class QuestionsController {
     _drawScore()
     QuestionsService.getActiveQuestion()
   }
+
+  skipQuestion() {
+    QuestionsService.getQuestions()
+  }
 }
