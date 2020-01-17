@@ -13,18 +13,19 @@ class QuestionsService {
     _triviaApi.get()
       .then(res => {
         let questions = res.data.map(q => new Question(q))
-        console.log("from API", res.data);
         store.commit("questions", questions)
-        console.log("store questions", store.State.questions);
         this.getActiveQuestion()
       })
   }
 
   getActiveQuestion() {
     let activeQuestion = store.State.questions[Math.floor(Math.random() * store.State.questions.length)]
-    store.commit("activeQuestion", activeQuestion)
-    console.log("store active question", store.State.activeQuestion);
-    store.State.questions.splice(activeQuestion, 1)
+    if (activeQuestion.value == null) {
+      this.getActiveQuestion()
+    } else {
+      store.commit("activeQuestion", activeQuestion)
+      store.State.questions.splice(activeQuestion, 1)
+    }
   }
 
   correct() {

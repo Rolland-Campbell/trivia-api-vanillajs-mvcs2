@@ -73,7 +73,7 @@ body {
 .answerText{
   color: gold;
   text-shadow: 2px 2px #000000;
-  font-size: 15vh;
+  font-size: 10vh;
 }
 
 @media only screen and (max-width: 400px) {

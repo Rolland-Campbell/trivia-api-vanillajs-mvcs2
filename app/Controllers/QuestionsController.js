@@ -5,7 +5,6 @@ import store from "../store.js";
 //Private
 function _draw() {
   let question = store.State.activeQuestion;
-  console.log(question);
   document.getElementById("question").innerHTML = question.Template
 }
 
@@ -35,14 +34,11 @@ export default class QuestionsController {
     QuestionsService.correct()
     _drawScore()
     QuestionsService.getActiveQuestion()
-    console.log("after correct splice", store.State.questions);
   }
 
   wrong() {
     QuestionsService.wrong()
     _drawScore()
     QuestionsService.getActiveQuestion()
-    console.log("after wrong splice", store.State.questions);
-
   }
 }
