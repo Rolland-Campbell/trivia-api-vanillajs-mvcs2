@@ -1,0 +1,116 @@
+body {
+  background-color: blue;
+  height: 100vh;
+}
+
+.headerText {
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 40px;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+.card {
+  background-color:blue;
+  background-image: linear-gradient(blue, rgb(0, 132, 255), blue);
+  border-radius: 20px;
+  border: 10px;
+  border-style: solid;
+  border-color: gold;
+  display: flex;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+
+
+.worthText {
+  color: gold;
+  text-shadow: 2px 2px #000000;
+  font-size: 20vh;
+}
+
+@media only screen and (max-width: 400px) {
+.worthText{
+  color: gold;
+  text-shadow: 2px 2px #000000;
+  font-size: 10vh;
+}
+}
+
+.categoryText {
+  color: gold;
+  text-shadow: 2px 2px #000000;
+  font-size: 6vh;
+}
+
+@media only screen and (max-width: 400px) {
+.categoryText {
+  color: gold;
+  text-shadow: 2px 2px #000000;
+  font-size: 4vh;
+}
+}
+
+.questionText {
+  padding: 10vh;
+  color: gold;
+  text-shadow: 2px 2px #000000;
+  font-size: 5vh;
+}
+
+@media only screen and (max-width: 400px) {
+.questionText{
+  color: gold;
+  text-shadow: 2px 2px #000000;
+  font-size: 3vh;
+}
+}
+
+.answerText{
+  color: gold;
+  text-shadow: 2px 2px #000000;
+  font-size: 15vh;
+}
+
+@media only screen and (max-width: 400px) {
+.answerText {
+  color: gold;
+  text-shadow: 2px 2px #000000;
+  font-size: 6vh;
+}
+}
+
+.choiceText{
+  color: white;
+  text-shadow: 2px 2px #000000;
+  font-size: 6vh;
+}
+
+@media only screen and (max-width: 400px) {
+.choiceText{
+  color: white;
+  text-shadow: 2px 2px #000000;
+  font-size: 3vh;
+}
+}
+
+.answerButtons {
+  width: 60px;
+}
+
+.nextButton {
+  width: 60px;
+  background-color: gold;
+}
+
+.spacingTop {
+height: 20vh;
+}
+
+.spacing2 {
+  height: 20vh;
+}
